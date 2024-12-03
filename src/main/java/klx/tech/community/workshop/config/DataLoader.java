@@ -83,7 +83,7 @@ public class DataLoader implements CommandLineRunner {
             // Show initialize producte in console
             System.out.println("Productos inicializados:");
             productRepository.findAll().forEach(product ->
-                    System.out.println(product.getName() + " - $" + product.getPrice())
+                    System.out.println(product.getName() + " - " + product.getPrice() + "€")
             );
         }
     }
